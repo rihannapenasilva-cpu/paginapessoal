@@ -40,7 +40,8 @@ padding-right: 30px;
 }
 .banner1{
 display: flex;
-justify-content: center;
+justify-content:end;
+flex-direction: row-reverse;
 }
 .estudante_titulo{
 padding: 50px;
