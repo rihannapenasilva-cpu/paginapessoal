@@ -39,8 +39,8 @@ width: 25%;
 padding-right: 30px;
 }
 .banner1{
-width: 38px;
-height: 45px;
+width:50%;
+padding: 45px;
 display: flex;
 flex-direction: row-reverse;
 }
