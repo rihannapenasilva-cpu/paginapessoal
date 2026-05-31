@@ -14,14 +14,14 @@ width: 100%;
 padding: 20px;
 }
 .cabecalho-itens{
-max-width: 19px;
+max-width: 1980px;
 margin: 0 auto;
 display: flex;
 align-items: center;
 justify-content: center;
 }
 .cabecalho-imagem{
-width: 10%;
+width: 1%;
 display: flex;
 justify-content: flex-start;
 align-items: center;
