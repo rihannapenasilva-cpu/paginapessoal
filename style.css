@@ -38,17 +38,16 @@ justify-content: flex-end;
 width: 25%;
 padding-right: 30px;
 }
-.banner1 {
-    display: flex;
-    justify-content: flex-end; /* Empurra a imagem totalmente para a direita */
-    width: 100%;               /* Ocupa a largura total para poder alinhar à direita */
-    padding-right: 10px;       /* Mantém o recuo que você colocou */
-    margin-top: auto;          /* Se o pai for flex/column, empurra para o fim da página */
+..banner1 {
+    position: fixed;     /* Ou absolute, conforme sua escolha anterior */
+    bottom: 50px;        /* Aumentado de 0 para 50px para subir o banner */
+    right: 10px;         
+    z-index: 999;        
 }
 
 .banner1 img {
-    width: 250px;              /* Define o tamanho médio para a imagem */
-    height: auto;              /* Mantém a proporção da fita sem distorcer */
+    width: 250px;        /* Define um tamanho maior para a imagem */
+    height: auto;        /* Mantém a proporção da imagem sem distorcer */
 }
 .estudante_titulo{
 padding: 50px;
