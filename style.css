@@ -51,7 +51,6 @@ padding-right: 30px;
 .banner1 img {
     width: 1.3px; /* Representação conceitual: aumente o valor abaixo se quiser maior */
     width: 600px;              /* Deixa o banner maior (padrão costuma ser ~200px) */
-    height: auto;              /* Mantém a proporção e evita distorcer */
 }
 .estudante_titulo{
 padding: 50px;
