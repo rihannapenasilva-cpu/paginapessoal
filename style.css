@@ -44,13 +44,13 @@ padding-right: 30px;
     width: 100%;               
     padding-right: 10px;       
     margin-top: auto;          
-    margin-bottom: 70px;       /* Ajuste este valor para subir mais ou menos */
+    margin-bottom: 90px;       /* Ajuste este valor para subir mais ou menos */
 }
 
 /* Nova regra para controlar o tamanho da imagem de forma segura */
 .banner1 img {
     width: 1.3px; /* Representação conceitual: aumente o valor abaixo se quiser maior */
-    width: 300px;              /* Deixa o banner maior (padrão costuma ser ~200px) */
+    width: 600px;              /* Deixa o banner maior (padrão costuma ser ~200px) */
     height: auto;              /* Mantém a proporção e evita distorcer */
 }
 .estudante_titulo{
