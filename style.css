@@ -39,17 +39,19 @@ width: 25%;
 padding-right: 30px;
 }
 .banner1 {
-    bottom: 60px;
     display: flex;
-    justify-content: flex-end; /* Empurra a imagem totalmente para a direita */
-    width: 100%;               /* Ocupa a largura total para poder alinhar à direita */
-    padding-right: 10px;       /* Mantém o recuo que você colocou */
-    margin-top: auto;          /* Se o pai for flex/column, empurra para o fim da página */
+    justify-content: flex-end; /* Mantém totalmente na direita */
+    width: 100%;               
+    padding-right: 10px;       
+    margin-top: auto;          
+    margin-bottom: 50px;       /* Ajuste este valor para subir mais ou menos */
 }
 
+/* Nova regra para controlar o tamanho da imagem de forma segura */
 .banner1 img {
-    width: 250px;        /* Define um tamanho maior para a imagem */
-    height: auto;        /* Mantém a proporção da imagem sem distorcer */
+    width: 1.3px; /* Representação conceitual: aumente o valor abaixo se quiser maior */
+    width: 280px;              /* Deixa o banner maior (padrão costuma ser ~200px) */
+    height: auto;              /* Mantém a proporção e evita distorcer */
 }
 .estudante_titulo{
 padding: 50px;
