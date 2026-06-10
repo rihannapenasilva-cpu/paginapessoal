@@ -38,6 +38,9 @@ justify-content: flex-end;
 width: 25%;
 padding-right: 30px;
 }
+
+
+
 .banner1 {
     display: flex;
     justify-content: flex-end; /* Mantém totalmente na direita */
@@ -52,6 +55,66 @@ padding-right: 30px;
     width: 1.3px; /* Representação conceitual: aumente o valor abaixo se quiser maior */
     width: 600px;              /* Deixa o banner maior (padrão costuma ser ~200px) */
 }
+
+
+
+
+
+
+
+/* Container que posiciona a fileira totalmente à esquerda */
+.container-botoes-esquerda {
+    display: flex;
+    justify-content: flex-start; /* Alinha o grupo de botões no canto esquerdo */
+    gap: 15px;                   /* Espaçamento horizontal entre os botões */
+    width: 100%;
+    padding-left: 15px;          /* Mantém um recuo elegante da borda esquerda */
+    box-sizing: border-box;
+}
+
+/* Estilo individual dos botões */
+.botao-item {
+    display: flex;
+    flex-direction: column;      /* Imagem em cima, texto embaixo */
+    align-items: center;         /* Centraliza o conteúdo dentro do botão */
+    justify-content: center;
+    width: 120px;                /* Largura do botão */
+    height: 100px;               /* Altura do botão */
+    background-color: #546B41;   /* Cor de fundo branca */
+    border: 1px solid #99AD7A;      /* Borda fina cinza */
+    border-radius: 6px;          /* Cantos levemente arredondados */
+    cursor: pointer;             /* Cursor de clique (mãozinha) */
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+/* Controle das imagens internas */
+.botao-item img {
+    width: 40px;                 /* Tamanho da imagem */
+    height: auto;
+    margin-bottom: 6px;          /* Espaço entre a imagem e o texto */
+}
+
+/* Estilo do texto interno */
+.botao-item span {
+    font-size: 13px;
+    color: #99AD7A;
+    font-family: sans-serif;
+}
+
+/* Efeito ao passar o mouse (Hover) */
+.botao-item:hover {
+    background-color: #4e633c;   /* Escurece levemente o fundo */
+    transform: scale(1.03);      /* Dá um leve zoom no botão */
+}
+
+
+
+
+
+
+
+
+
 .estudante_titulo{
 padding: 50px;
 text-align: center;
