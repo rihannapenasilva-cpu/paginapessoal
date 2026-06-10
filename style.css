@@ -65,53 +65,45 @@ padding-right: 30px;
 /* Container que posiciona a fileira totalmente à esquerda */
 .container-botoes-esquerda {
     display: flex;
-    justify-content: flex-start; /* Alinha o grupo de botões no canto esquerdo */
-    gap: 15px;                   /* Espaçamento horizontal entre os botões */
+    justify-content: flex-start; 
+    gap: 15px;                   
     width: 100%;
-    padding-left: 15px;          /* Mantém um recuo elegante da borda esquerda */
+    padding-left: 15px;          
     box-sizing: border-box;
 }
 
-/* Estilo individual dos botões */
+/* O botão agora se adapta perfeitamente ao tamanho da imagem */
 .botao-item {
     display: flex;
-    flex-direction: column;      /* Imagem em cima, texto embaixo */
-    align-items: center;         /* Centraliza o conteúdo dentro do botão */
+    align-items: center;         
     justify-content: center;
-    width: 120px;                /* Largura do botão */
-    height: 100px;               /* Altura do botão */
-    background-color: #546B41;   /* Cor de fundo branca */
-    border: 1px solid #99AD7A;      /* Borda fina cinza */
-    border-radius: 6px;          /* Cantos levemente arredondados */
-    cursor: pointer;             /* Cursor de clique (mãozinha) */
-    transition: background-color 0.2s ease, transform 0.2s ease;
+    
+    /* Remove as larguras fixas antigas */
+    width: auto;                 
+    height: auto;                
+    
+    /* Espaçamento interno mínimo para a borda ficar colada (mude para 0 se quiser encostado) */
+    padding: 2px;                
+    
+    background-color: transparent; /* Remove o fundo verde para destacar a imagem */
+    border: 2px solid #99AD7A;    /* Mantém a sua borda estilizada */
+    border-radius: 6px;          
+    cursor: pointer;             
+    transition: transform 0.2s ease, border-color 0.2s ease;
 }
 
-/* Controle das imagens internas */
+/* Define o tamanho real que você quer para os seus botões de imagem */
 .botao-item img {
-    width: 40px;                 /* Tamanho da imagem */
+    width: 60px;                 /* Aumentei um pouco para o botão ter boa área de clique */
     height: auto;
-    margin-bottom: 6px;          /* Espaço entre a imagem e o texto */
+    display: block;              /* Remove espaços fantasmas abaixo da imagem */
 }
 
-/* Estilo do texto interno */
-.botao-item span {
-    font-size: 13px;
-    color: #99AD7A;
-    font-family: sans-serif;
-}
-
-/* Efeito ao passar o mouse (Hover) */
+/* Efeito Hover focado na borda e no tamanho */
 .botao-item:hover {
-    background-color: #4e633c;   /* Escurece levemente o fundo */
-    transform: scale(1.03);      /* Dá um leve zoom no botão */
+    border-color: #546B41;       /* Inverte a cor da borda ao passar o mouse */
+    transform: scale(1.05);      /* Dá o zoom suave */
 }
-
-
-
-
-
-
 
 
 
