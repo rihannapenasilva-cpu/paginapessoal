@@ -39,6 +39,7 @@ width: 25%;
 padding-right: 30px;
 }
 ..banner1 {
+    display: flex;
     justify-content: flex-end;
     position: fixed;     /* Ou absolute, conforme sua escolha anterior */
     bottom: 50px;        /* Aumentado de 0 para 50px para subir o banner */
