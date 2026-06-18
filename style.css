@@ -41,11 +41,6 @@ padding-right: 30px;
 
 
 
-/* IMPORTANTE: Adicione isso para que o 'top' funcione corretamente */
-header {
-    position: relative;
-}
-
 .banner1 {
     position: absolute;       
     top: 170px;               /* Aumente este valor (ex: 140px, 150px) para descer a fita */
