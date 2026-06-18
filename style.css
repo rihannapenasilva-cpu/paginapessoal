@@ -101,7 +101,6 @@ padding-right: 30px;
 
 /* Efeito Hover focado na borda e no tamanho */
 .botao-item:hover {
-    border-color: #546B41;       /* Inverte a cor da borda ao passar o mouse */
     transform: scale(1.05);      /* Dá o zoom suave */
 }
 
