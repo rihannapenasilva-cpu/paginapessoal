@@ -42,19 +42,18 @@ padding-right: 30px;
 
 
 .banner1 {
-    display: flex;
-    justify-content: flex-end; /* Mantém totalmente na direita */
-    width: 100%;               
-    padding-right: 10px;       
-    margin-top: auto;          
-    margin-bottom: 90px;       /* Ajuste este valor para subir mais ou menos */
+    position: absolute;       /* Permite flutuar o elemento na tela */
+    top: 50px;                /* Ajuste este valor para subir ou descer a fita */
+    right: 0;                 /* Cola a fita totalmente na borda direita */
+    z-index: 10;              /* Garante que ela fique por cima do fundo verde */
 }
 
-/* Nova regra para controlar o tamanho da imagem de forma segura */
 .banner1 img {
-    width: 1.3px; /* Representação conceitual: aumente o valor abaixo se quiser maior */
-    width: 600px;              /* Deixa o banner maior (padrão costuma ser ~200px) */
+    width: 450px;             /* Ajustado para um tamanho proporcional à tela */
+    height: auto;             /* Mantém a proporção da imagem sem distorcer */
+    display: block;
 }
+
 
 
 
