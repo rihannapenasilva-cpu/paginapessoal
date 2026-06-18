@@ -43,13 +43,13 @@ padding-right: 30px;
 
 .banner1 {
     position: absolute;       
-    top: 170px;               /* Aumente este valor (ex: 140px, 150px) para descer a fita */
+    top: 180px;               /* Aumente este valor (ex: 140px, 150px) para descer a fita */
     right: 0;                 
     z-index: 10;              
 }
 
 .banner1 img {
-    width: 380px;             /* Diminuído levemente para alinhar melhor com os ícones */
+    width: 480px;             /* Diminuído levemente para alinhar melhor com os ícones */
     height: auto;             
     display: block;
 }
