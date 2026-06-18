@@ -48,7 +48,7 @@ header {
 
 .banner1 {
     position: absolute;       
-    top: 147px;               /* Aumente este valor (ex: 140px, 150px) para descer a fita */
+    top: 150px;               /* Aumente este valor (ex: 140px, 150px) para descer a fita */
     right: 0;                 
     z-index: 10;              
 }
