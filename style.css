@@ -41,18 +41,24 @@ padding-right: 30px;
 
 
 
+/* IMPORTANTE: Adicione isso para que o 'top' funcione corretamente */
+header {
+    position: relative;
+}
+
 .banner1 {
-    position: absolute;       /* Permite flutuar o elemento na tela */
-    top: 30px;                /* Ajuste este valor para subir ou descer a fita */
-    right: 0;                 /* Cola a fita totalmente na borda direita */
-    z-index: 10;              /* Garante que ela fique por cima do fundo verde */
+    position: absolute;       
+    top: 130px;               /* Aumente este valor (ex: 140px, 150px) para descer a fita */
+    right: 0;                 
+    z-index: 10;              
 }
 
 .banner1 img {
-    width: 450px;             /* Ajustado para um tamanho proporcional à tela */
-    height: auto;             /* Mantém a proporção da imagem sem distorcer */
+    width: 380px;             /* Diminuído levemente para alinhar melhor com os ícones */
+    height: auto;             
     display: block;
 }
+
 
 
 
