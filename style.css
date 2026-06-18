@@ -43,7 +43,7 @@ padding-right: 30px;
 
 .banner1 {
     position: absolute;       /* Permite flutuar o elemento na tela */
-    top: 47px;                /* Ajuste este valor para subir ou descer a fita */
+    top: 40px;                /* Ajuste este valor para subir ou descer a fita */
     right: 0;                 /* Cola a fita totalmente na borda direita */
     z-index: 10;              /* Garante que ela fique por cima do fundo verde */
 }
