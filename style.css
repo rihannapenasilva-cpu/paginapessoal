@@ -53,7 +53,7 @@ padding-right: 30px;
 .titulo_site { 
     position: absolute;
     top: 50%;                 /* Move o texto para a metade vertical da fita */
-    left: 45%;                /* Ajustado para 45% porque o lado esquerdo da fita é plano e o direito tem o recorte recortado */
+    left: 50%;                /* Ajustado para 45% porque o lado esquerdo da fita é plano e o direito tem o recorte recortado */
     transform: translate(-50%, -50%); /* Centraliza perfeitamente o próprio texto */
     font-size: 30px;          /* Corrigido de 'font' para 'font-size' */
     color: white;             /* Adicionado cor branca para dar contraste no fundo verde */
