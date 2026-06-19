@@ -46,7 +46,7 @@ padding-right: 30px;
 
 .banner1 { 
     position: absolute; 
-    top: 130px; /* Mantém a fita exatamente na posição que já estava */ 
+    top: 100px; /* Mantém a fita exatamente na posição que já estava */ 
     right: 0; 
     z-index: 10; 
 }
