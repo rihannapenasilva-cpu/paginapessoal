@@ -78,48 +78,45 @@ padding-right: 30px;
 
 
 
-
-/* Container que posiciona a fileira totalmente à esquerda */
+/* Container que posiciona a fileira em coluna totalmente à esquerda */
 .container-botoes-esquerda {
     display: flex;
+    flex-direction: column;      /* Altera o alinhamento de horizontal para vertical */
     justify-content: flex-start; 
-    gap: 15px;                   
-    width: 100%;
+    align-items: flex-start;     /* Garante que os botões fiquem colados na esquerda */
+    gap: 15px;                   /* Espaço vertical entre um botão e outro */
+    width: auto;                 /* Mudado para auto para não ocupar a tela inteira */
     padding-left: 15px;          
     box-sizing: border-box;
 }
 
-/* O botão agora se adapta perfeitamente ao tamanho da imagem */
+/* O botão se adapta ao novo tamanho aumentado da imagem */
 .botao-item {
     display: flex;
     align-items: center;         
     justify-content: center;
-    
-    /* Remove as larguras fixas antigas */
     width: auto;                 
     height: auto;                
-    
-    /* Espaçamento interno mínimo para a borda ficar colada (mude para 0 se quiser encostado) */
     padding: 2px;                
-    
-    background-color: transparent; /* Remove o fundo verde para destacar a imagem */
-    border: 2px solid #99AD7A;    /* Mantém a sua borda estilizada */
+    background-color: transparent; 
+    border: 2px solid #99AD7A;    
     border-radius: 6px;          
     cursor: pointer;             
     transition: transform 0.2s ease, border-color 0.2s ease;
 }
 
-/* Define o tamanho real que você quer para os seus botões de imagem */
+/* Aumenta o tamanho real dos botões de imagem */
 .botao-item img {
-    width: 60px;                 /* Aumentei um pouco para o botão ter boa área de clique */
+    width: 100px;                /* Aumentado de 60px para 100px (mude este valor se quiser ainda maior) */
     height: auto;
-    display: block;              /* Remove espaços fantasmas abaixo da imagem */
+    display: block;              
 }
 
 /* Efeito Hover focado na borda e no tamanho */
 .botao-item:hover {
-    transform: scale(1.05);      /* Dá o zoom suave */
+    transform: scale(1.05);      
 }
+
 
 
 
