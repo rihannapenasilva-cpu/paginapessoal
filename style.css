@@ -76,41 +76,46 @@ padding-right: 30px;
 
 
 
-
 /* Container que posiciona a fileira em coluna totalmente à esquerda */
 .container-botoes-esquerda {
     display: flex;
     flex-direction: column;      
     justify-content: flex-start; 
     align-items: flex-start;     
-    gap: 40px;                   /* Aumentado de 15px para 30px para dar mais distância entre eles */
+    gap: 40px;                   
     width: auto;                 
     padding-left: 15px;          
     box-sizing: border-box;
-    margin-top: 30px;            /* Espaço em relação ao topo/barra verde */
+    margin-top: 30px;            
 }
 
-/* O botão se adapta ao novo tamanho aumentado da imagem */
+/* O botão se adapta ao tamanho reduzido da imagem */
 .botao-item {
     display: flex;
     align-items: center;         
     justify-content: center;
-    width: auto;                 
-    height: auto;                
-    padding: 0;                  /* Mudado para 0 para a borda ficar totalmente colada na imagem */
+    width: auto !important;      /* Força o botão a encolher junto com a imagem */
+    height: auto !important;                
+    padding: 0;                  
     background-color: transparent; 
     border: 2px solid #99AD7A;    
     border-radius: 6px;          
     cursor: pointer;             
     transition: transform 0.2s ease, border-color 0.2s ease;
 }
-/* Altere apenas este bloco para controlar o tamanho real deles */
+
+/* Força a redução real do tamanho das imagens */
 .botao-item img {
-    width: 180px;                 /* Reduzido de 200px para 80px para que eles fiquem pequenos e delicados */
-    height: auto;                /* Mantém a proporção correta sem distorcer o desenho */
+    width: 70px !important;      /* Mudado de 180px para 70px para ficarem pequenas */
+    max-width: 70px !important;  /* Impede que o tamanho original da imagem estoure o layout */
+    height: auto !important;                
     display: block;              
 }
 
+/* Efeito Hover focado na borda e no tamanho */
+.botao-item:hover {
+    transform: scale(1.05);      
+}
 
 
 
