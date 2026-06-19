@@ -26,12 +26,8 @@ display: flex;
 justify-content: flex-start;
 align-items: center;
 }
-.titulo_site{
-padding: 50px;
-text-align: center;
-width: 50%;
-font: 30px;
-}
+
+
 .sociais{
 display: flex;
 justify-content: flex-end;
@@ -43,16 +39,30 @@ padding-right: 30px;
 
 .banner1 {
     position: absolute;       
-    top: 180px;               /* Aumente este valor (ex: 140px, 150px) para descer a fita */
+    top: 180px;               /* Ajuste para descer ou subir o conjunto todo */
     right: 0;                 
     z-index: 10;              
+    display: inline-block;    /* Faz o container ter exatamente o tamanho do banner */
 }
 
 .banner1 img {
-    width: 480px;             /* Diminuído levemente para alinhar melhor com os ícones */
+    width: 480px;             
     height: auto;             
     display: block;
 }
+
+.titulo_site {
+    position: absolute;
+    top: 50%;                 /* Move o início do texto para o meio vertical do banner */
+    left: 50%;                /* Move o início do texto para o meio horizontal do banner */
+    transform: translate(-50%, -50%); /* Centraliza perfeitamente o próprio texto */
+    font-size: 30px;          /* Correção do atributo font para font-size */
+    color: white;             /* Altere para a cor que desejar para contrastar com o verde */
+    white-space: nowrap;      /* Evita que o nome quebre em duas linhas */
+    padding: 0;               /* Removido o padding antigo para não desalinhá-lo */
+    margin: 0;
+}
+
 
 
 
