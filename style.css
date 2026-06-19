@@ -1,11 +1,22 @@
+html {
+    zoom: 1.15; /* Aumenta o site inteiro em 15%. Use 1.2 para aumentar 20% */
+}
 *{
 margin: 0;
 padding: 0;
 box-sizing: border-box;
 }
-body{
-font-family: "Poppins", sans-serif;
+body {
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;       /* O padrão geralmente é 16px. Aumentar para 18px ou 20px expande o site */
+    line-height: 1.6;      /* Melhora o espaçamento entre as linhas para não embolar */
+    min-height: 100vh;    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
 }
+
+
 header {
     background-color: #546B41;
     color: #FFF8EC;
