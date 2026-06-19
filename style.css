@@ -6,12 +6,16 @@ box-sizing: border-box;
 body{
 font-family: "Poppins", sans-serif;
 }
-header{
-background-color: #546B41;
-
-color: #FFF8EC;
-width: 100%;
-padding: 20px;
+header {
+    background-color: #546B41;
+    color: #FFF8EC;
+    width: 100%;
+    padding: 20px;
+    
+    /* Adicione estas 3 linhas abaixo caso a logo ainda teime em ficar no meio: */
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
 }
 .cabecalho-itens{
 max-width: 1980px;
