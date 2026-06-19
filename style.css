@@ -106,7 +106,7 @@ padding-right: 30px;
 
 /* Força a redução real do tamanho das imagens */
 .botao-item img {
-    width: 70px !important;      /* Mudado de 180px para 70px para ficarem pequenas */
+    width: 170px !important;      /* Mudado de 180px para 70px para ficarem pequenas */
     max-width: 70px !important;  /* Impede que o tamanho original da imagem estoure o layout */
     height: auto !important;                
     display: block;              
