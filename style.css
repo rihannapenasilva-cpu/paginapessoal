@@ -85,7 +85,7 @@ padding-right: 30px;
     flex-direction: column;      
     justify-content: flex-start; 
     align-items: flex-start;     
-    gap: 50px;                   /* Aumentado de 15px para 30px para dar mais distância entre eles */
+    gap: 70px;                   /* Aumentado de 15px para 30px para dar mais distância entre eles */
     width: auto;                 
     padding-left: 15px;          
     box-sizing: border-box;
