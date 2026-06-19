@@ -20,14 +20,14 @@ display: flex;
 align-items: center;
 justify-content: center;
 }
-.cabecalho_imagem { /* Corrigido para underline igual ao seu HTML */
-    position: absolute;
-    top: 50px;              /* Ajusta a distância do topo do site */
-    left: 50px;             /* Empurra a imagem para o canto esquerdo */
-    width: 150px;           /* Define um tamanho fixo adequado para a logo */
-    height: auto;
-    z-index: 10;
+.cabecalho-imagem{
+width: 60%;
+left: 50px;
+display: flex;
+justify-content: flex-start;
+align-items: center;
 }
+
 
 .sociais{
 display: flex;
