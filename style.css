@@ -150,27 +150,30 @@ padding: 24px 0;
 display: flex;
 justify-content: space-around;
 }
-.escola{
-background-image: linear-gradient(#99AD7A
-);
-color: #FFF8EC;
-display: flex;
-justify-content:center;
-padding: 24px 0;
-text-align:center;
-display:block;
+.escola {
+    background-image: linear-gradient(#99AD7A, #7A8E5C); /* Adicionado um segundo tom suave para o gradiente funcionar perfeitamente */
+    color: #FFF8EC;
+    
+    /* Ativa o flexbox para alinhar o GIF e o texto lado a lado */
+    display: flex;        
+    justify-content: center;
+    align-items: center;
+    gap: 20px;            /* Cria um espaço elegante entre o GIF e o texto */
+    
+    padding: 24px 0;
+    text-align: center;
+    width: 100%;          /* Garante que o rodapé ocupe toda a largura da tela */
+    
+    /* Remove o display:block antigo que estava anulando o flexbox */
 }
+
 .escola-titulo{
 padding: 50px;
 text-align: center;
 }
-.logo_rodape{
-height: 90px;
-padding: 12px 0;
-
-}
-
-.link{
-color: #FFF8EC;
-text-decoration: none;
+.logo_rodape {
+    height: 150px;         /* Aumentado de 80px para 150px para o GIF ficar maior */
+    width: auto;           /* Mantém a proporção perfeita do GIF sem distorcer */
+    padding: 12px 0;
+    display: block;        /* Garante que o navegador aplique os tamanhos corretamente */
 }
