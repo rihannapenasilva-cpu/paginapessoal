@@ -22,7 +22,6 @@ justify-content: center;
 }
 .cabecalho-imagem{
 width: 60%;
-left: 50px;
 display: flex;
 justify-content: flex-start;
 align-items: center;
