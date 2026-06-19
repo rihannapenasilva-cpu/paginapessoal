@@ -79,17 +79,17 @@ padding-right: 30px;
 
 
 
-
 /* Container que posiciona a fileira em coluna totalmente à esquerda */
 .container-botoes-esquerda {
     display: flex;
-    flex-direction: column;      /* Altera o alinhamento de horizontal para vertical */
+    flex-direction: column;      
     justify-content: flex-start; 
-    align-items: flex-start;     /* Garante que os botões fiquem colados na esquerda */
-    gap: 15px;                   /* Espaço vertical entre um botão e outro */
-    width: auto;                 /* Mudado para auto para não ocupar a tela inteira */
+    align-items: flex-start;     
+    gap: 30px;                   /* Aumentado de 15px para 30px para dar mais distância entre eles */
+    width: auto;                 
     padding-left: 15px;          
     box-sizing: border-box;
+    margin-top: 30px;            /* Espaço em relação ao topo/barra verde */
 }
 
 /* O botão se adapta ao novo tamanho aumentado da imagem */
@@ -99,7 +99,7 @@ padding-right: 30px;
     justify-content: center;
     width: auto;                 
     height: auto;                
-    padding: 2px;                
+    padding: 0;                  /* Mudado para 0 para a borda ficar totalmente colada na imagem */
     background-color: transparent; 
     border: 2px solid #99AD7A;    
     border-radius: 6px;          
@@ -107,17 +107,6 @@ padding-right: 30px;
     transition: transform 0.2s ease, border-color 0.2s ease;
 }
 
-/* Aumenta o tamanho real dos botões de imagem */
-.botao-item img {
-    width: 200px;                /* Aumentado de 60px para 100px (mude este valor se quiser ainda maior) */
-    height: auto;
-    display: block;              
-}
-
-/* Efeito Hover focado na borda e no tamanho */
-.botao-item:hover {
-    transform: scale(1.05);      
-}
 
 
 
