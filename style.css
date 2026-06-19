@@ -46,10 +46,12 @@ padding-right: 30px;
 
 .banner1 { 
     position: absolute; 
-    top: 100px; /* Mantém a fita exatamente na posição que já estava */ 
-    right: -1; 
+    top: 140px; /* Mantém a altura atual que você definiu */ 
+    right: 0;   /* Cola o banner totalmente na borda direita do site */
+    left: auto; /* Garante que não haja conflito com posicionamento à esquerda */
     z-index: 10; 
 }
+
 
 .banner1 img { 
     width: 480px; 
