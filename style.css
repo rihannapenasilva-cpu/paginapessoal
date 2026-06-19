@@ -109,7 +109,7 @@ padding-right: 30px;
 
 /* Aumenta o tamanho real dos botões de imagem */
 .botao-item img {
-    width: 180px;                /* Aumentado de 60px para 100px (mude este valor se quiser ainda maior) */
+    width: 200px;                /* Aumentado de 60px para 100px (mude este valor se quiser ainda maior) */
     height: auto;
     display: block;              
 }
