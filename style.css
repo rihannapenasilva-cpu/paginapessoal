@@ -37,31 +37,31 @@ padding-right: 30px;
 
 
 
-.banner1 {
-    position: absolute;       
-    top: 180px;               /* Ajuste para descer ou subir o conjunto todo */
-    right: 0;                 
-    z-index: 10;              
-    display: inline-block;    /* Faz o container ter exatamente o tamanho do banner */
+.banner1 { 
+    position: absolute; 
+    top: 180px; /* Mantém a fita exatamente na posição que já estava */ 
+    right: 0; 
+    z-index: 10; 
 }
 
-.banner1 img {
-    width: 480px;             
-    height: auto;             
+.banner1 img { 
+    width: 480px; 
+    height: auto; 
     display: block;
 }
 
-.titulo_site {
+.titulo_site { 
     position: absolute;
-    top: 50%;                 /* Move o início do texto para o meio vertical do banner */
-    left: 50%;                /* Move o início do texto para o meio horizontal do banner */
+    top: 50%;                 /* Move o texto para a metade vertical da fita */
+    left: 45%;                /* Ajustado para 45% porque o lado esquerdo da fita é plano e o direito tem o recorte recortado */
     transform: translate(-50%, -50%); /* Centraliza perfeitamente o próprio texto */
-    font-size: 30px;          /* Correção do atributo font para font-size */
-    color: white;             /* Altere para a cor que desejar para contrastar com o verde */
+    font-size: 30px;          /* Corrigido de 'font' para 'font-size' */
+    color: white;             /* Adicionado cor branca para dar contraste no fundo verde */
     white-space: nowrap;      /* Evita que o nome quebre em duas linhas */
-    padding: 0;               /* Removido o padding antigo para não desalinhá-lo */
     margin: 0;
+    padding: 0;               /* Zerado o padding antigo para não desalinhá-lo */
 }
+
 
 
 
