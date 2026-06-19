@@ -106,7 +106,7 @@ padding-right: 30px;
 }
 /* Altere apenas este bloco para controlar o tamanho real deles */
 .botao-item img {
-    width: 100px;                 /* Reduzido de 200px para 80px para que eles fiquem pequenos e delicados */
+    width: 180px;                 /* Reduzido de 200px para 80px para que eles fiquem pequenos e delicados */
     height: auto;                /* Mantém a proporção correta sem distorcer o desenho */
     display: block;              
 }
