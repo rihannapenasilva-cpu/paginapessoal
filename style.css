@@ -20,11 +20,13 @@ display: flex;
 align-items: center;
 justify-content: center;
 }
-.cabecalho-imagem{
-width: 60%;
-display: flex;
-justify-content: flex-start;
-align-items: center;
+.cabecalho_imagem {
+    display: block;        /* Remove espaçamentos extras abaixo da imagem */
+    width: 150px;          /* Define um tamanho fixo ideal para a logo */
+    height: auto;          /* Mantém a proporção perfeita do desenho */
+    margin-left: 0;        /* Garante que ela encoste totalmente na esquerda */
+    margin-top: -20px;     /* Anula o padding do header para subir e alinhar com o topo */
+    margin-bottom: -20px;  /* Anula o padding de baixo para a barra verde não esticar */
 }
 
 
