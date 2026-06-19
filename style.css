@@ -77,15 +77,13 @@ padding-right: 30px;
 
 
 
-
-
 /* Container que posiciona a fileira em coluna totalmente à esquerda */
 .container-botoes-esquerda {
     display: flex;
     flex-direction: column;      
     justify-content: flex-start; 
     align-items: flex-start;     
-    gap: 40px;                   /* Aumentado de 15px para 30px para dar mais distância entre eles */
+    gap: 30px;                   /* Aumentado de 15px para 30px para dar mais distância entre eles */
     width: auto;                 
     padding-left: 15px;          
     box-sizing: border-box;
@@ -106,6 +104,7 @@ padding-right: 30px;
     cursor: pointer;             
     transition: transform 0.2s ease, border-color 0.2s ease;
 }
+
 
 
 
