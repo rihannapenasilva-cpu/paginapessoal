@@ -129,6 +129,34 @@ padding-right: 30px;
 }
 
 
+.conteudo-principal {
+  display: flex;
+  align-items: center;       /* Alinha imagem e texto verticalmente ao centro */
+  gap: 20px;                 /* Espaço de separação entre a imagem e o texto */
+  padding: 20px;             /* Afastamento interno para o conteúdo não colar nas bordas */
+  margin-top: 80px;          /* MARGEM SUPERIOR: Ajuste este valor para empurrar a seção para baixo do banner */
+  max-width: 100%;           /* Garante que não vai estourar a largura da tela */
+  box-sizing: border-box;
+}
+
+.bloco-imagem {
+  flex: 1;                   /* Ocupa uma parte igual do espaço horizontal */
+  max-width: 50%;            /* Limita a imagem a no máximo metade da largura da seção */
+}
+
+.bloco-imagem img {
+  width: 100%;               /* Faz a imagem se ajustar ao tamanho do bloco */
+  height: auto;              /* Mantém a proporção correta da imagem */
+  border-radius: 8px;        /* Opcional: deixa as bordas da imagem arredondadas */
+}
+
+.bloco-texto {
+  flex: 1;                   /* Ocupa a outra metade do espaço horizontal */
+  color: #333333;            /* Cor do texto (ajuste conforme o seu design) */
+}
+
+
+
 
 
 
