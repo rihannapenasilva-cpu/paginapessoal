@@ -105,15 +105,15 @@ padding-right: 30px;
     display: none;
 }
 
-/* Alinhamento de colunas: Botões na esquerda (200px) e Conteúdo no resto do espaço */
 .layout-pagina {
     display: grid;
-    grid-template-columns: 120px 1fr; /* Primeira coluna fixa para botões, segunda estica */
-    gap: 40px;                        /* Distância horizontal entre botões e o conteúdo */
+    grid-template-columns: 160px 1fr; /* Aumentado de 120px para 160px para acomodar os botões maiores */
+    gap: 40px;                        
     width: 100%;
     box-sizing: border-box;
-    padding-top: 120px;               /* Empurra tudo para baixo do banner superior */
+    padding-top: 120px;               
 }
+
 
 /* Coluna esquerda empilhada */
 .container-botoes-esquerda {
@@ -122,27 +122,29 @@ padding-right: 30px;
     gap: 15px;
 }
 
-/* Adaptação do botão usando label */
+/* 1. Aumenta o container do botão e remove o recuo forçado */
 .botao-item {
     display: flex;
     align-items: center;         
     justify-content: center;
-    width: auto;      
+    width: 140px;                 /* Aumentado de 'auto' para um tamanho fixo maior */
     height: auto;                
-    padding: 0;                  
+    padding: 5px;                 /* Adiciona uma leve borda interna ao redor da imagem */
     background-color: transparent; 
-    border: 2px solid #99AD7A;    
-    border-radius: 6px;          
+    border: 3px solid #99AD7A;    /* Borda ligeiramente mais grossa para destacar */
+    border-radius: 8px;          
     cursor: pointer;             
     transition: transform 0.2s ease, border-color 0.2s ease, background-color 0.2s;
 }
 
+/* 2. Controla o tamanho real das imagens dentro dos botões */
 .botao-item img {
-    width: 70px !important;       
-    max-width: 100px !important;  
+    width: 100% !important;       /* Faz a imagem ocupar toda a largura interna do botão */
+    max-width: 130px !important;  /* Define o novo tamanho limite da imagem (era 100px) */
     height: auto !important;                
     display: block;              
 }
+
 
 .botao-item:hover {
     transform: scale(1.05);      
@@ -223,35 +225,14 @@ padding-right: 30px;
 
 
 
-.estudante_titulo{
-padding: 50px;
-text-align: center;
 
-}
-.estudante-nome{
-text-align: center;
-}
-.estudante-imagem{
-width: 120px;
-}
-.estudante-icone{
-width: 38px;
-padding: 4px 8px;
-}
-.estudante{
-background-image: background-color(#DCCCAC
-);
-padding: 24px 0;
-}
 
-.estudante.div{
-text-align: center;
-padding: 24px 0;
-}
-.estudantes_todos{
-display: flex;
-justify-content: space-around;
-}
+
+
+
+
+
+
 .escola {
     background-image: linear-gradient(#99AD7A, #99AD7A); /* Adicionado um segundo tom suave para o gradiente funcionar perfeitamente */
     color: #FFF8EC;
