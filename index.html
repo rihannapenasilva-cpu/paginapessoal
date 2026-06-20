@@ -38,20 +38,68 @@ todos abaixo-->
 <!--para aumentar os alunos copie a div no edidor que corresponda desde a foto
 até os icones abaixo - dúvidas chame o professor-->
 
+<div class="layout-pagina">
+    
+    <!-- Controles Invisíveis (Radios) -->
+    <input type="radio" name="abas" id="aba-1" checked class="radio-aba">
+    <input type="radio" name="abas" id="aba-2" class="radio-aba">
+    <input type="radio" name="abas" id="aba-3" class="radio-aba">
 
-<div class="container-botoes-esquerda">
-    <button class="botao-item">
-        <img src="botao1.png" alt="Botao 1">
-    </button>
-    
-    <button class="botao-item">
-        <img src="botao2.png" alt="Botao 2">
-    </button>
-    
-    <button class="botao-item">
-        <img src="botao3.png" alt="Botao 3">
-    </button>
+    <!-- Coluna da Esquerda: Botões (Labels) -->
+    <div class="container-botoes-esquerda">
+        <!-- O 'for' conecta o clique diretamente ao ID do input radio acima -->
+        <label for="aba-1" class="botao-item" id="btn-aba-1">
+            <img src="botao1.png" alt="Botao 1">
+        </label>
+        
+        <label for="aba-2" class="botao-item" id="btn-aba-2">
+            <img src="botao2.png" alt="Botao 2">
+        </label>
+        
+        <label for="aba-3" class="botao-item" id="btn-aba-3">
+            <img src="botao3.png" alt="Botao 3">
+        </label>
+    </div>
+
+    <!-- Coluna da Direita: Área das Seções Dinâmicas -->
+    <div class="container-secoes-direita">
+        
+        <!-- Seção 1 -->
+        <section class="secao-conteudo secao-1">
+            <div class="bloco-imagem">
+                <img src="imagem1.jpg" alt="Imagem Seção 1">
+            </div>
+            <div class="bloco-texto">
+                <h2>Título da Seção 1</h2>
+                <p>Conteúdo da primeira seção. Funciona sem JavaScript!</p>
+            </div>
+        </section>
+
+        <!-- Seção 2 -->
+        <section class="secao-conteudo secao-2">
+            <div class="bloco-imagem">
+                <img src="imagem2.jpg" alt="Imagem Seção 2">
+            </div>
+            <div class="bloco-texto">
+                <h2>Título da Seção 2</h2>
+                <p>Conteúdo da segunda seção carregado puramente por CSS.</p>
+            </div>
+        </section>
+
+        <!-- Seção 3 -->
+        <section class="secao-conteudo secao-3">
+            <div class="bloco-imagem">
+                <img src="imagem3.jpg" alt="Imagem Seção 3">
+            </div>
+            <div class="bloco-texto">
+                <h2>Título da Seção 3</h2>
+                <p>Conteúdo da terceira seção completando o layout.</p>
+            </div>
+        </section>
+
+    </div>
 </div>
+
 
 
 <!-- Seção que substitui a área vermelha -->

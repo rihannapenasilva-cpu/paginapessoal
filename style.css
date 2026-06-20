@@ -100,33 +100,96 @@ padding-right: 30px;
     margin-top: 30px;            
 }
 
-/* O botão se adapta ao tamanho reduzido da imagem */
+/* Esconde os inputs de bolinha originais para não poluírem a tela */
+.radio-aba {
+    display: none;
+}
+
+/* Alinhamento de colunas: Botões na esquerda (200px) e Conteúdo no resto do espaço */
+.layout-pagina {
+    display: grid;
+    grid-template-columns: 120px 1fr; /* Primeira coluna fixa para botões, segunda estica */
+    gap: 40px;                        /* Distância horizontal entre botões e o conteúdo */
+    width: 100%;
+    box-sizing: border-box;
+    padding-top: 120px;               /* Empurra tudo para baixo do banner superior */
+}
+
+/* Coluna esquerda empilhada */
+.container-botoes-esquerda {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Adaptação do botão usando label */
 .botao-item {
     display: flex;
     align-items: center;         
     justify-content: center;
-    width: auto !important;      /* Força o botão a encolher junto com a imagem */
-    height: auto !important;                
+    width: auto;      
+    height: auto;                
     padding: 0;                  
     background-color: transparent; 
     border: 2px solid #99AD7A;    
     border-radius: 6px;          
     cursor: pointer;             
-    transition: transform 0.2s ease, border-color 0.2s ease;
+    transition: transform 0.2s ease, border-color 0.2s ease, background-color 0.2s;
 }
 
-/* Força a redução real do tamanho das imagens */
 .botao-item img {
-    width: 180px !important;      /* Mudado de 180px para 70px para ficarem pequenas */
-    max-width: 100px !important;  /* Impede que o tamanho original da imagem estoure o layout */
+    width: 70px !important;       
+    max-width: 100px !important;  
     height: auto !important;                
     display: block;              
 }
 
-/* Efeito Hover focado na borda e no tamanho */
 .botao-item:hover {
     transform: scale(1.05);      
 }
+
+/* --- LÓGICA DO CSS SELETOR PARA O BOTÃO ATIVO --- */
+#aba-1:checked ~ .container-botoes-esquerda #btn-aba-1,
+#aba-2:checked ~ .container-botoes-esquerda #btn-aba-2,
+#aba-3:checked ~ .container-botoes-esquerda #btn-aba-3 {
+    background-color: #99AD7A33; /* Destaca visualmente qual botão está clicado */
+    border-color: #7b8e5f;
+}
+
+/* --- LÓGICA DO CSS SELETOR PARA EXIBIR AS SEÇÕES --- */
+
+/* Esconde todas as seções por padrão */
+.secao-conteudo {
+    display: none;            
+    align-items: center;
+    gap: 25px;
+    width: 100%;
+}
+
+/* Exibe a seção correspondente dependendo de qual input está ativo (checked) */
+#aba-1:checked ~ .container-secoes-direita .secao-1,
+#aba-2:checked ~ .container-secoes-direita .secao-2,
+#aba-3:checked ~ .container-secoes-direita .secao-3 {
+    display: flex; /* Transforma em flex para alinhar foto e texto lado a lado */
+}
+
+/* Layout interno do conteúdo direito */
+.bloco-imagem {
+    flex: 1;
+    max-width: 45%;
+}
+
+.bloco-imagem img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.bloco-texto {
+    flex: 1;
+    color: #333333;
+}
+
 
 
 .conteudo-principal {
