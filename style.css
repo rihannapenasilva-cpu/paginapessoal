@@ -29,7 +29,7 @@ body {
     background-color: #546B41;
     color: #FFF8EC;
     width: 100%;
-    padding: 40px 40px;            /* Aumentado de 15px para 40px em cima e embaixo para deixar a barra bem mais alta */
+    padding: 50px 50px;            /* Aumentado de 15px para 40px em cima e embaixo para deixar a barra bem mais alta */
     display: flex;
     justify-content: space-between; 
     align-items: center;           
