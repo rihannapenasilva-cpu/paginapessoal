@@ -21,12 +21,12 @@ body {
     background-color: #546B41;
     color: #FFF8EC;
     width: 100%;
-    padding: 40px 40px;            /* Aumentado de 15px para 40px em cima e embaixo para deixar a barra bem mais alta */
+    padding: 15px 40px;            /* 15px em cima/baixo e 40px nas laterais para desgrudar da tela */
     display: flex;
-    justify-content: space-between; 
-    align-items: center;           
+    justify-content: space-between; /* Afasta o logo principal das redes sociais para as pontas */
+    align-items: center;           /* Alinha tudo perfeitamente no centro vertical */
     box-sizing: border-box;
-}
+}      
 
 /* Garante que o logo principal não estoure o tamanho da barra verde */
 .cabecalho_imagem {
@@ -54,10 +54,6 @@ body {
 }
 
 
-/* Efeito opcional: os ícones crescem levemente ao passar o mouse */
-.link-social img:hover {
-    transform: scale(1.1);
-}
 
 .cabecalho_imagem {
     display: block;        
@@ -69,13 +65,6 @@ body {
     margin-bottom: -20px;  /* Cancela o espaço verde de baixo */
 }
 
-
-.sociais{
-display: flex;
-justify-content: flex-end;
-width: 25%;
-padding-right: 30px;
-}
 
 
 
