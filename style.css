@@ -21,38 +21,36 @@ body {
     background-color: #546B41;
     color: #FFF8EC;
     width: 100%;
-    padding: 20px;
-    
-    /* Adicione estas 3 linhas abaixo caso a logo ainda teime em ficar no meio: */
+    padding: 15px 40px;            /* 15px em cima/baixo e 40px nas laterais para desgrudar da tela */
     display: flex;
-    justify-content: space-between; 
-    align-items: center;
+    justify-content: space-between; /* Afasta o logo principal das redes sociais para as pontas */
+    align-items: center;           /* Alinha tudo perfeitamente no centro vertical */
+    box-sizing: border-box;
+}      
+
+/* Garante que o logo principal não estoure o tamanho da barra verde */
+.cabecalho_imagem {
+    max-height: 80px;              /* Ajuste essa altura se quiser que o seu logo fique maior ou menor */
+    width: auto;
 }
 
-.cabecalho-itens {
-    max-width: 1980px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between; /* Afasta o logo principal das redes sociais */
-    padding: 10px 20px;
-    box-sizing: border-box;
-}         
-
-/* Container que guarda os links das redes sociais */
+/* Container que guarda as redes sociais na ponta direita */
 .sociais-container {
     display: flex;
     align-items: center;
-    gap: 15px; /* Cria um espaçamento igual e perfeito entre os ícones */
+    gap: 15px;                     /* Espaço perfeito e igual entre os ícones das redes sociais */
 }
 
-/* Força todas as imagens de redes sociais a terem EXATAMENTE o mesmo tamanho */
-/* Força todas as imagens de redes sociais a terem um tamanho menor e idêntico */
+/* Tamanho pequeno e padronizado para os ícones sociais */
 .link-social img {
-    width: 24px !important;   /* Tamanho reduzido de 35px para 24px */
-    height: 24px !important;  /* Mantém a proporção quadrada */
+    width: 24px !important;   
+    height: 24px !important;  
     object-fit: contain;      
     transition: transform 0.2s ease;
+}
+
+.link-social img:hover {
+    transform: scale(1.1);
 }
 
 
