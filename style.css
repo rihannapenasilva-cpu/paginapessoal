@@ -163,7 +163,7 @@ body {
 /* 2. Controla o tamanho real das imagens dentro dos botões */
 .botao-item img {
     width: 100% !important;       /* Faz a imagem ocupar toda a largura interna do botão */
-    max-width: 130px !important;  /* Define o novo tamanho limite da imagem (era 100px) */
+    max-width: 110px !important;  /* Define o novo tamanho limite da imagem (era 100px) */
     height: auto !important;                
     display: block;              
 }
