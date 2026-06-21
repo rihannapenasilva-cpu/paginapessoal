@@ -28,7 +28,7 @@ body {
     justify-content: space-between; 
     align-items: center;
 }
-
+    
 .cabecalho-itens {
     max-width: 1980px;
     margin: 0 auto;
@@ -48,8 +48,8 @@ body {
 
 /* Força todas as imagens de redes sociais a terem EXATAMENTE o mesmo tamanho */
 .link-social img {
-    width: 20px !important;   /* Define a largura padrão igual para todos */
-    height: 20px !important;  /* Define a altura padrão igual para todos */
+    width: 35px !important;   /* Define a largura padrão igual para todos */
+    height: 35px !important;  /* Define a altura padrão igual para todos */
     object-fit: contain;      /* Garante que a imagem não distorça dentro do tamanho fixo */
     transition: transform 0.2s ease;
 }
