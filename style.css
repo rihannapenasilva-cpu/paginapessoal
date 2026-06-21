@@ -29,7 +29,7 @@ body {
     background-color: #546B41;
     color: #FFF8EC;
     width: 100%;
-    padding: 0px 80px;             /* MUDADO: De 50px para 0px em cima/baixo. Deixa a barra verde justa e perfeita ao redor do logo */
+    padding: 80px 80px;             /* MUDADO: De 50px para 0px em cima/baixo. Deixa a barra verde justa e perfeita ao redor do logo */
     display: flex;
     justify-content: space-between; 
     align-items: center;           
