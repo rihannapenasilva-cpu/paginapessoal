@@ -17,24 +17,48 @@ body {
 }
 
 
-header {
+.header {
     background-color: #546B41;
     color: #FFF8EC;
     width: 100%;
     padding: 20px;
-    
+
     /* Adicione estas 3 linhas abaixo caso a logo ainda teime em ficar no meio: */
     display: flex;
     justify-content: space-between; 
     align-items: center;
 }
-.cabecalho-itens{
-max-width: 1980px;
-margin: 0 auto;
-display: flex;
-align-items: center;
-justify-content: center;
+
+.cabecalho-itens {
+    max-width: 1980px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Afasta o logo principal das redes sociais */
+    padding: 10px 20px;
+    box-sizing: border-box;
+}         
+
+/* Container que guarda os links das redes sociais */
+.sociais-container {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Cria um espaçamento igual e perfeito entre os ícones */
 }
+
+/* Força todas as imagens de redes sociais a terem EXATAMENTE o mesmo tamanho */
+.link-social img {
+    width: 35px !important;   /* Define a largura padrão igual para todos */
+    height: 35px !important;  /* Define a altura padrão igual para todos */
+    object-fit: contain;      /* Garante que a imagem não distorça dentro do tamanho fixo */
+    transition: transform 0.2s ease;
+}
+
+/* Efeito opcional: os ícones crescem levemente ao passar o mouse */
+.link-social img:hover {
+    transform: scale(1.1);
+}
+
 .cabecalho_imagem {
     display: block;        
     width: 150px;          /* Ajuste o tamanho (ex: 120px ou 130px) se quiser ela menor */
