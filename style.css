@@ -29,17 +29,19 @@ body {
     background-color: #546B41;
     color: #FFF8EC;
     width: 100%;
-    padding: 50px 50px;            /* Aumentado de 15px para 40px em cima e embaixo para deixar a barra bem mais alta */
+    padding: 0px 50px;             /* MUDADO: De 50px para 0px em cima/baixo. Deixa a barra verde justa e perfeita ao redor do logo */
     display: flex;
     justify-content: space-between; 
     align-items: center;           
     box-sizing: border-box;
 }
 
+
 /* Garante que o logo principal não estoure o tamanho da barra verde */
 .cabecalho_imagem {
-    max-height: 80px;              /* Ajuste essa altura se quiser que o seu logo fique maior ou menor */
+    max-height: 140px;             /* Mantém o tamanho grande e bonito do logotipo */
     width: auto;
+    display: block;
 }
 
 /* Container que guarda as redes sociais na ponta direita */
