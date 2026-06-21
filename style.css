@@ -110,167 +110,107 @@ body {
 
 
 
-/* Container que posiciona a fileira em coluna totalmente à esquerda */
-.container-botoes-esquerda {
-    display: flex;
-    flex-direction: column;      
-    justify-content: flex-start; 
-    align-items: flex-start;     
-    gap: 40px;                   
-    width: auto;                 
-    padding-left: 15px;          
-    box-sizing: border-box;
-    margin-top: 30px;            
-}
-
-/* Esconde os inputs de bolinha originais para não poluírem a tela */
+/* --- CONFIGURAÇÃO GERAL DA PÁGINA --- */
 .radio-aba {
     display: none;
 }
 
 .layout-pagina {
     display: grid;
-    grid-template-columns: 160px 1fr; /* Aumentado de 120px para 160px para acomodar os botões maiores */
+    grid-template-columns: 160px 1fr;
     gap: 40px;                        
     width: 100%;
     box-sizing: border-box;
     padding-top: 120px;               
 }
 
-
-/* Coluna esquerda empilhada */
+/* --- COLUNA ESQUERDA (BOTÕES) --- */
 .container-botoes-esquerda {
     display: flex;
-    flex-direction: column;
-    gap: 15px;
+    flex-direction: column;      
+    justify-content: flex-start; 
+    align-items: flex-start;     
+    gap: 15px;                   
+    width: auto;                 
+    padding-left: 15px;          
+    box-sizing: border-box;
+    margin-top: 30px;            
 }
 
-/* 1. Aumenta o container do botão e remove o recuo forçado */
 .botao-item {
     display: flex;
     align-items: center;         
     justify-content: center;
-    width: 140px;                 /* Aumentado de 'auto' para um tamanho fixo maior */
+    width: 140px;                 
     height: auto;                
-    padding: 5px;                 /* Adiciona uma leve borda interna ao redor da imagem */
-    background-color: transparent; 
-    border: 3px solid #99AD7A;    /* Borda ligeiramente mais grossa para destacar */
+    padding: 5px;                 
+    border: 3px solid #99AD7A;    
     border-radius: 8px;          
     cursor: pointer;             
     transition: transform 0.2s ease, border-color 0.2s ease, background-color 0.2s;
 }
 
-/* 2. Controla o tamanho real das imagens dentro dos botões */
 .botao-item img {
-    width: 100% !important;       /* Faz a imagem ocupar toda a largura interna do botão */
-    max-width: 110px !important;  /* Define o novo tamanho limite da imagem (era 100px) */
+    width: 100% !important;       
+    max-width: 110px !important;  
     height: auto !important;                
     display: block;              
 }
-
 
 .botao-item:hover {
     transform: scale(1.05);      
 }
 
-/* --- LÓGICA DO CSS SELETOR PARA O BOTÃO ATIVO --- */
 #aba-1:checked ~ .container-botoes-esquerda #btn-aba-1,
 #aba-2:checked ~ .container-botoes-esquerda #btn-aba-2,
 #aba-3:checked ~ .container-botoes-esquerda #btn-aba-3 {
-    background-color: #99AD7A33; /* Destaca visualmente qual botão está clicado */
+    background-color: #99AD7A33; 
     border-color: #7b8e5f;
 }
 
-/* --- LÓGICA DO CSS SELETOR PARA EXIBIR AS SEÇÕES --- */
-
-/* Esconde todas as seções por padrão */
+/* --- COLUNA DIREITA (SEÇÕES) --- */
 .secao-conteudo {
     display: none;            
-    align-items: center;
-    gap: 25px;
+    align-items: flex-start; /* Alinha o topo da imagem com o topo do texto */
+    gap: 30px;
     width: 100%;
 }
 
-/* Exibe a seção correspondente dependendo de qual input está ativo (checked) */
+/* Exibe apenas a seção ativa */
 #aba-1:checked ~ .container-secoes-direita .secao-1,
 #aba-2:checked ~ .container-secoes-direita .secao-2,
 #aba-3:checked ~ .container-secoes-direita .secao-3 {
-    display: flex; /* Transforma em flex para alinhar foto e texto lado a lado */
+    display: flex; 
 }
 
-/* Container principal da seção */
-.secao-1 {
-    display: flex;
-    align-items: flex-start; /* Alinha o conteúdo pelo topo */
-    gap: 20px; /* Cria um espaçamento entre a imagem e os textos */
-}
-
-/* Diminuindo o tamanho do bloco da imagem (ex: de 45% para 30%) */
+/* DEIXANDO A IMAGEM BEM PEQUENA (25% da área) */
 .bloco-imagem {
-    flex: 0 0 20%; /* Mantém o tamanho fixo em 30% da largura */
-    max-width: 20%;
+    flex: 0 0 25%; 
+    max-width: 25%;
 }
 
 .bloco-imagem img {
     width: 100%;
     height: auto;
     border-radius: 8px;
-    object-fit: cover; /* Garante que a imagem não distorça */
+    object-fit: cover;
 }
 
-/* Bloco que envolve todos os textos */
+/* BLOCO DE TEXTOS INTERNOS */
 .bloco-texto {
     flex: 1;
     color: #333333;
     display: flex;
-    flex-direction: column; /* Organiza as caixas uma embaixo da outra */
-    gap: 15px; /* Espaço entre cada caixa de texto */
+    flex-direction: column; 
+    gap: 15px; 
 }
 
-/* Estilo para cada caixa de texto interna (opcional, para organização) */
 .caixa-info {
-    background-color: #f9f9f9; /* Um fundo leve para destacar (opcional) */
-    padding: 10px;
+    background-color: #f9f9f9; 
+    padding: 15px;
     border-radius: 6px;
-    border-left: 4px solid #4CAF50; /* Uma bordinha colorida para combinar com o menu lateral */
+    border-left: 4px solid #99AD7A; 
 }
-
-
-
-
-.conteudo-principal {
-  display: flex;
-  align-items: center;       /* Alinha imagem e texto verticalmente ao centro */
-  gap: 20px;                 /* Espaço de separação entre a imagem e o texto */
-  padding: 20px;             /* Afastamento interno para o conteúdo não colar nas bordas */
-  margin-top: 80px;          /* MARGEM SUPERIOR: Ajuste este valor para empurrar a seção para baixo do banner */
-  max-width: 100%;           /* Garante que não vai estourar a largura da tela */
-  box-sizing: border-box;
-}
-
-.bloco-imagem {
-  flex: 1;                   /* Ocupa uma parte igual do espaço horizontal */
-  max-width: 50%;            /* Limita a imagem a no máximo metade da largura da seção */
-}
-
-.bloco-imagem img {
-  width: 100%;               /* Faz a imagem se ajustar ao tamanho do bloco */
-  height: auto;              /* Mantém a proporção correta da imagem */
-  border-radius: 8px;        /* Opcional: deixa as bordas da imagem arredondadas */
-}
-
-.bloco-texto {
-  flex: 1;                   /* Ocupa a outra metade do espaço horizontal */
-  color: #333333;            /* Cor do texto (ajuste conforme o seu design) */
-}
-
-
-
-
-
-
-
-
 
 
 
