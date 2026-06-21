@@ -198,22 +198,43 @@ body {
     display: flex; /* Transforma em flex para alinhar foto e texto lado a lado */
 }
 
-/* Layout interno do conteúdo direito */
+/* Container principal da seção */
+.secao-1 {
+    display: flex;
+    align-items: flex-start; /* Alinha o conteúdo pelo topo */
+    gap: 20px; /* Cria um espaçamento entre a imagem e os textos */
+}
+
+/* Diminuindo o tamanho do bloco da imagem (ex: de 45% para 30%) */
 .bloco-imagem {
-    flex: 1;
-    max-width: 45%;
+    flex: 0 0 30%; /* Mantém o tamanho fixo em 30% da largura */
+    max-width: 30%;
 }
 
 .bloco-imagem img {
     width: 100%;
     height: auto;
     border-radius: 8px;
+    object-fit: cover; /* Garante que a imagem não distorça */
 }
 
+/* Bloco que envolve todos os textos */
 .bloco-texto {
     flex: 1;
     color: #333333;
+    display: flex;
+    flex-direction: column; /* Organiza as caixas uma embaixo da outra */
+    gap: 15px; /* Espaço entre cada caixa de texto */
 }
+
+/* Estilo para cada caixa de texto interna (opcional, para organização) */
+.caixa-info {
+    background-color: #f9f9f9; /* Um fundo leve para destacar (opcional) */
+    padding: 10px;
+    border-radius: 6px;
+    border-left: 4px solid #4CAF50; /* Uma bordinha colorida para combinar com o menu lateral */
+}
+
 
 
 
