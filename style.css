@@ -207,8 +207,8 @@ body {
 
 /* Diminuindo o tamanho do bloco da imagem (ex: de 45% para 30%) */
 .bloco-imagem {
-    flex: 0 0 30%; /* Mantém o tamanho fixo em 30% da largura */
-    max-width: 30%;
+    flex: 0 0 20%; /* Mantém o tamanho fixo em 30% da largura */
+    max-width: 20%;
 }
 
 .bloco-imagem img {
