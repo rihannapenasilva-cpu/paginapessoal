@@ -17,18 +17,18 @@ body {
 }
 
 
-.header {
+header {
     background-color: #546B41;
     color: #FFF8EC;
     width: 100%;
     padding: 20px;
-
+    
     /* Adicione estas 3 linhas abaixo caso a logo ainda teime em ficar no meio: */
     display: flex;
     justify-content: space-between; 
     align-items: center;
 }
-    
+
 .cabecalho-itens {
     max-width: 1980px;
     margin: 0 auto;
@@ -47,12 +47,14 @@ body {
 }
 
 /* Força todas as imagens de redes sociais a terem EXATAMENTE o mesmo tamanho */
+/* Força todas as imagens de redes sociais a terem um tamanho menor e idêntico */
 .link-social img {
-    width: 35px !important;   /* Define a largura padrão igual para todos */
-    height: 35px !important;  /* Define a altura padrão igual para todos */
-    object-fit: contain;      /* Garante que a imagem não distorça dentro do tamanho fixo */
+    width: 24px !important;   /* Tamanho reduzido de 35px para 24px */
+    height: 24px !important;  /* Mantém a proporção quadrada */
+    object-fit: contain;      
     transition: transform 0.2s ease;
 }
+
 
 /* Efeito opcional: os ícones crescem levemente ao passar o mouse */
 .link-social img:hover {
